@@ -13,5 +13,5 @@ datos = {"nombre": nombre, "edad": edad, "direccion": direccion, "telefono": tel
 
 print((datos["nombre"] + (" tiene ") +
        (datos["edad"]) + (" años, vive en ") +
-       (datos["direccion"]) + ("y su numero de telefono es ") +
+       (datos["direccion"]) + (" y su numero de telefono es ") +
        (datos["telefono"])))

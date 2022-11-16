@@ -17,6 +17,11 @@ while trad != "terminar":
    print(diccionario)
    trad = input("Introduzca la palabra en español y su traduccion <palabra>:<traduccion>\n")
 
-   if trad == "terminar":
-      frase = input("Introduzca una frase para traducirlo:\n")
-      
+frase = input("Introduzca una frase para traducirlo:\n")
+frase_sep = frase.split(" ")
+for palabra in frase_sep :
+   if palabra in diccionario.keys():
+      print(diccionario[palabra], end=" ")
+   else:
+      print(palabra, end=" ")
+

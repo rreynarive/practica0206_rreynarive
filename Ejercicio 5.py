@@ -8,17 +8,19 @@
 # utilizará el diccionario para traducirla palabra a palabra.
 # Si una palabra no está en el diccionario debe dejarla sin traducir.
 diccionario = {}
-trad = input("Introduzca la palabra en español y su traduccion <palabra>:<traduccion>\n")
+trad = input("Introduzca la palabra en español y su "
+             "traduccion <palabra>:<traduccion>\n")
 while trad != "terminar":
    trad.split(":")
    cast = trad[:trad.find(":")]
    ing = trad[trad.find(":")+1:]
    diccionario[cast] = ing
-   print(diccionario)
-   trad = input("Introduzca la palabra en español y su traduccion <palabra>:<traduccion>\n")
+   trad = input("Introduzca la palabra en español y su "
+                "traduccion <palabra>:<traduccion>\n")
 
 frase = input("Introduzca una frase para traducirlo:\n")
 frase_sep = frase.split(" ")
+
 for palabra in frase_sep :
    if palabra in diccionario.keys():
       print(diccionario[palabra], end=" ")

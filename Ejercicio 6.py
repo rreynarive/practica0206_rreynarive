@@ -10,3 +10,16 @@ menu = "Eliga la siguente accion:\n"\
        "(5)- Listar alumnados aprobados\n"\
        "(6)- Terminar\n"
 
+print(menu)
+if menu == 1:
+       dictionary[clave] = valor
+elif menu == 2:
+       del dictionary[]
+elif menu == 3:
+       print(hola)
+elif menu == 4:
+       print(clase)
+elif menu == 5:
+       print(g)
+elif menu >= 6:
+       

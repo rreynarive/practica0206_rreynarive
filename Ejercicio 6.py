@@ -22,4 +22,3 @@ elif menu == 4:
 elif menu == 5:
        print(g)
 elif menu >= 6:
-       

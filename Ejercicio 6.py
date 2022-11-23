@@ -1,5 +1,7 @@
 clase = [{"73464267j": {"nombre": "Rosa", "apellido": "Reyna", "telefono": "123456789", "correo": "reynarive@educacion.es", "aprobado": True}},
          {"12345678m": {"nombre": "Jos", "apellido": "Aba", "telefono": "125478964", "correo": "abajos@educacion.es", "aprobado": False}}]
+datos = {"nombre": "nombre", "apellido": "apellido", "telefono": "telefono", "correo": "correo", "aprobado": "aprobado"}
+alumno = {"NIF": datos}
 for i in clase:
     print(i)
 
@@ -11,8 +13,8 @@ opci = "Eliga la siguente accion:\n"\
        "(5)- Listar alumnados aprobados\n"\
        "(6)- Terminar\n"
 
-menu = input(opci)
-while menu != "6":
+menu = int(input(opci))
+while True:
     if menu == "1":
         NIF = input("Introduce el NIF del alumno:\n")
         nombre = input("Introduce el nombre del alumno:\n")
@@ -26,26 +28,26 @@ while menu != "6":
         for i in clase:
             print(i)
 
-
-    if menu == "2":
+    elif menu == 2:
         NIF = input("Introduce el NIF del alumno para eliminar:\n")
-        alumno = {NIF: " "}
-        if NIF in clase:
-            clase.remove(alumno)
+
+        if NIF in list(clase[0]):
+            clase.remove({NIF: datos})
         else:
             print("No existe el alumno con el NIF", NIF)
         for i in clase:
             print(i)
 
-
-    if menu == "3":
+    elif menu == 3:
         NIF = input("Introduce el NIF del alumno para mostrar:\n")
         if NIF in clase:
             clase[0]
 
-    if menu == "4":
+    elif menu == 4:
         print("Lista de todo el alumnado")
 
-
-    if menu == "5":
+    elif menu == 5:
         print("Lista de alumnados aprobados")
+
+    else:
+        break

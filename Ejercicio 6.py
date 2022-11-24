@@ -13,7 +13,7 @@ while True:
     print("(4)- Listar todo el alumnado")
     print("(5)- Listar alumnados aprobados")
     print("(6)- Terminar")
-    menu = int(input("Eliga un de las siguentes acciones:"))
+    menu = int(input("Elija un de las siguientes acciones:"))
 
     if menu == 1:
         NIF = input("Introduce el NIF del alumno:\n")
